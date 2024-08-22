@@ -1,0 +1,280 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #fff7e5;
+    color: #9b3552;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    padding-right: 20px;
+}
+
+.logo img {
+    width: 110px;
+    font-weight: bold;
+    padding-left: 30px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding-right: 10px;
+}
+
+.menu {
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    height: 15px;
+    line-height: 15px;
+    color: #9b3552;
+    padding: 4px;
+}
+
+.menu:hover {
+    font-size: 110%;
+    border-bottom: 3px solid;
+}
+
+.search-cart a {
+    color: #9b3552;
+    font-size: 30px;
+    margin-left: 15px;
+	margin-right: 50px;
+}
+
+.nuestra-historia {
+    background-color: #fff7e5;
+    color: #9b3552;
+    padding: 50px 20px;
+}
+
+.historia-contenido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.historia-imagen {
+    flex: 1;
+    max-width: 40%;
+}
+
+.historia-imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.historia-texto {
+    flex: 1;
+    max-width: 50%;
+}
+
+.historia-texto h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.historia-texto h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.historia-texto p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.video-container iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border: none;
+}
+
+.floating-instagram {
+    position: fixed;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    border: 2px solid #9b3552;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    text-decoration: none;
+    color: inherit;
+}
+
+.floating-instagram i {
+    color: #9b3552;
+    font-size: 24px;
+}
+
+.floating-instagram:hover {
+    background-color: #9b3552;
+}
+
+.floating-instagram:hover i {
+    color: white;
+}
+
+footer {
+    background-color: #9b3552;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-content div {
+    margin-bottom: 20px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-bottom a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-media {
+    text-align: center;
+}
+
+.fa-instagram {
+    color: white;
+    font-size: 30px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .menu {
+        width: auto;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 992px) {
+    .historia-contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .historia-imagen, .historia-texto {
+        max-width: 100%;
+    }
+    
+    .historia-texto h2 {
+        font-size: 30px;
+    }
+
+    .historia-texto h3 {
+        font-size: 22px;
+    }
+
+    .historia-texto p {
+        font-size: 16px;
+    }
+
+    .video-container iframe {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .historia-texto h2 {
+        font-size: 28px;
+    }
+
+    .historia-texto h3 {
+        font-size: 20px;
+    }
+
+    .historia-texto p {
+        font-size: 15px;
+    }
+
+    .historia-imagen img {
+        width: 100%;
+        height: auto;
+    }
+
+    .video-container iframe {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .historia-texto h2 {
+        font-size: 24px;
+    }
+
+    .historia-texto h3 {
+        font-size: 18px;
+    }
+
+    .historia-texto p {
+        font-size: 14px;
+    }
+
+    .video-container {
+        margin: 20px 0;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="imagenes/logo1.png" type="image/png">
+    <title>Fear Less</title>
+    <link rel="stylesheet" href="styles.css">
+	<script src="https://kit.fontawesome.com/fbc2085431.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="menu-fixed">
+            <div class="logo">
+                <img src="imagenes/logo1.png" alt="logo1" width="100">
+            </div>
+        <ul>        
+            <a href="index.html"><li class="menu">Inicio</li></a>     
+            <a href="#productos"><li class="menu">Carta</li></a>
+            <a href="nosotros.html"><li class="menu">Nuestra Historia</li></a>
+            <a href="#contactos"><li class="menu">Contacto</li></a>
+        </ul>
+            <div class="search-cart">
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-image">&nbsp;
+        </div>
+        <div class="hero-text">
+            <h1>Conoce nuestra carta</h1>
+            <a href="#" class="order-now">Ordena ahora</a>
+        </div>
+    </section>
+
+    <section class="products" id="productos">
+        <a href="comprabrownie.html"><div class="product-item">
+            <img src="imagenes/brownies.jpg" alt="producto1">
+            <h2>Brownies de Chocolate</h2>
+        </div></a>
+        <a href="comprabrownie.html"><div class="product-item">
+            <img src="imagenes/pie-de-manzana.jpg" alt="producto2">
+            <h2>Pie de Manzana</h2>
+        </div></a>
+        <a href="comprabrownie.html"><div class="product-item">
+            <img src="imagenes/pionono.jpg" alt="producto3">
+            <h2>Piononos de Fruta</h2>
+        </div></a>
+        <a href="comprabrownie.html"><div class="product-item">
+            <img src="imagenes/torta-chocolate.jpg" alt="producto4">
+            <h2>Torta de Chocolate</h2>
+        </div></a>
+        <a href="comprabrownie.html"><div class="product-item">
+            <img src="imagenes/alfajores.jpeg" alt="producto5">
+            <h2>Alfajores</h2>
+        </div></a>
+        <a href="comprabrownie.html"><div class="product-item">
+            <img src="imagenes/empanadas.jpg" alt="producto6">
+            <h2>Empanadas</h2>
+        </div></a>
+    </section>
+
+    <section class="newsletter">
+        <h2>Suscríbete a nuestra lista de correos</h2>
+        <form action="#">
+            <input type="email" placeholder="Correo electrónico">
+            <button type="submit">Mandar&nbsp;</button>
+        </form>
+    </section>
+	
+	<a href="https://www.instagram.com/fearless_reposteria/" class="floating-instagram" target="_blank">
+    <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <footer id="contactos">
+        <div class="footer-content">
+            <div class="location">
+                <h3>Ubicación</h3>
+                <p>V.M.T - Lima</p>
+            </div>
+            <div class="contact">
+                <h3>Contacto</h3>
+                <p>Correo: gianellavilchez@gmail.com</p>
+            </div>
+            <div class="social-media">
+                <h3>Síguenos en nuestro Instagram</h3>
+                <a href="https://www.instagram.com/fearless_reposteria/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+	<script>
+    // Lista de imágenes para el slider
+    const images = [
+        "imagenes/portada.jpeg",
+        "imagenes/sliders1.jpg",
+        "imagenes/sliders2.jpg",
+        "imagenes/sliders3.jpg"
+    ];
+
+    let currentIndex = 0;
+    const heroImage = document.querySelector('.hero-image');
+
+    function changeBackgroundImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        heroImage.style.backgroundImage = `url(${images[currentIndex]})`; // Cambia la imagen de fondo
+    }
+
+    // Cambia la imagen cada 5 segundos
+    setInterval(changeBackgroundImage, 5000);
+</script>
+
+</body>
+</html>

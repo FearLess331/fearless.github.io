@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagenes/logo1.png" type="image/png">
+    <title>Fear Less</title>
+    <link rel="stylesheet" href="styles2.css">
+    <script src="https://kit.fontawesome.com/fbc2085431.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="menu-fixed">
+            <div class="logo">
+                <img src="imagenes/logo1.png" alt="logo1" width="100">
+            </div>
+            <ul class="nav-links">        
+                <a href="index.html"><li class="menu">Inicio</li></a>     
+                <a href="index.html#productos"><li class="menu">Carta</li></a>
+                <a href="nosotros.html"><li class="menu">Nuestra Historia</li></a>
+                <a href="#contactos"><li class="menu">Contacto</li></a>
+            </ul>
+            <div class="search-cart">
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="product-container">
+            <div class="product-images">
+                <div class="main-image">
+                    <img id="main-image" src="imagenes/brownies.jpg" alt="Imagen Principal">
+                </div>
+                <div class="thumbnail-images">
+                    <img src="imagenes/brownies.jpg" alt="Imagen 1" onclick="changeImage('imagenes/brownies.jpg')">
+                    <img src="imagenes/brownie1.jpg" alt="Imagen 2" onclick="changeImage('imagenes/brownie1.jpg')">
+                    <img src="imagenes/brownie2.jpg" alt="Imagen 3" onclick="changeImage('imagenes/brownie2.jpg')">
+                </div>
+            </div>
+            <div class="product-details">
+                <h1>Galletas rellenas de Manjar de olla</h1>
+                <p><strong>6 unidades - 100gr c/u</strong></p>
+                <h2 class="precio">S/. 48.00 PEN</h2>
+                <p>Impuesto Incluido. Los <a href="#">gastos de envío</a> se calculan en la pantalla de pago.</p>
+                <p>Si deseas el producto para mañana, tu pedido tendrá que ser realizado antes de las 4pm. En todo caso será entregado en dos días.</p>
+                <div class="quantity">
+                    <label for="quantity"><strong>Cantidad</strong></label>
+                    <input type="number" id="quantity" name="quantity" value="1" min="1">
+                </div>
+                <button class="add-to-cart">Agregar al carrito</button>
+                <p><strong>Retiro disponible en Tienda</strong></p>
+                <p>Normalmente esta listo en 24 horas</p>
+                <a href="#">ver información de la tienda</a><br><br>
+                <a href="#" class="share">Share</a>
+            </div>
+        </div>
+    </main>
+	
+		<a href="https://www.instagram.com/fearless_reposteria/" class="floating-instagram" target="_blank">
+    <i class="fa-brands fa-instagram"></i>
+    </a>
+    
+    <footer id="contactos">
+        <div class="footer-content">
+            <div class="location">
+                <h3>Ubicación</h3>
+                <p>V.M.T - Lima</p>
+            </div>
+            <div class="contact">
+                <h3>Contacto</h3>
+                <p>Correo: gianellavilchez@gmail.com</p>
+            </div>
+            <div class="social-media">
+                <h3>Síguenos en nuestro Instagram</h3>
+                <a href="https://www.instagram.com/fearless_reposteria/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+	<script>
+		function changeImage(imageSrc) {
+    document.getElementById("main-image").src = imageSrc;
+}
+
+	</script>	
+</body>
+</html>
